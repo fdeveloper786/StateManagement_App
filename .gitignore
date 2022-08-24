@@ -38,6 +38,7 @@
 
 # Web related
 lib/generated_plugin_registrant.dart
+lib/api_class.dart
 
 
 # Symbolication related
@@ -50,5 +51,4 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
-/lib/api_class.dart
 
