@@ -9,6 +9,8 @@ import 'BlocPatternApp/Screens/home_screen.dart';
 import 'ProviderApp/Pages/homepage.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
+import 'api_class.dart';
+
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   //await FlutterConfig.loadEnvVariables();
@@ -23,6 +25,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     print('dot evn ${dotenv.env['API_URL']}');
     print('dot env2 ${dotenv.env['PHOTOS']}');
+    print('api class ${MyApi.API_URL}');
     return BlocProvider(
       create: (context) => InternetBloc(),
       child: MaterialApp(
